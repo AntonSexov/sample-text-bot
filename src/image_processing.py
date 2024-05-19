@@ -38,10 +38,10 @@ def add_text_to_image(input, out, top_t = "SAMPLE TEXT", bottom_t = "SAMPLE TEXT
     #draw
     x, y = (img.size[0] - top_text_width)/2 , img.size[1] * 0.05
 
-    draw.text((x-1, y-1), top_text, font=font, fill="black")
-    draw.text((x+1, y-1), top_text, font=font, fill="black")
-    draw.text((x-1, y+1), top_text, font=font, fill="black")
-    draw.text((x+1, y+1), top_text, font=font, fill="black")
+    draw.text((x-2, y-2), top_text, font=font, fill="black")
+    draw.text((x+2, y-2), top_text, font=font, fill="black")
+    draw.text((x-2, y+2), top_text, font=font, fill="black")
+    draw.text((x+2, y+2), top_text, font=font, fill="black")
 
     draw.text((x, y), top_text, font=font, fill = (255, 255, 255))
 
@@ -50,10 +50,10 @@ def add_text_to_image(input, out, top_t = "SAMPLE TEXT", bottom_t = "SAMPLE TEXT
 
     x, y = (img.size[0] - bottom_text_width)/2 , img.size[1] - (img.size[1] * 0.20)
 
-    draw.text((x-1, y-1), bottom_text, font=font, fill="black")
-    draw.text((x+1, y-1), bottom_text, font=font, fill="black")
-    draw.text((x-1, y+1), bottom_text, font=font, fill="black")
-    draw.text((x+1, y+1), bottom_text, font=font, fill="black")
+    draw.text((x-2, y-2), bottom_text, font=font, fill="black")
+    draw.text((x+2, y-2), bottom_text, font=font, fill="black")
+    draw.text((x-2, y+2), bottom_text, font=font, fill="black")
+    draw.text((x+2, y+2), bottom_text, font=font, fill="black")
 
     draw.text((x, y), bottom_text, font=font, fill = (255, 255, 255))
 
